@@ -109,7 +109,7 @@ final class TexyTypographyModule extends TexyModule
 													=> "\$1\xc2\xa0",
 
 			// space between preposition and word
-			'#(?<=^|[^0-9'.TexyPatterns::CHAR.'])([\x17-\x1F]*[ksvzouiKSVZOUIA][\x17-\x1F]*)\s++(?=[\x17-\x1F]*[0-9'.TexyPatterns::CHAR.'])#mus'
+			'#(?<=^|[^0-9'.TexyPatterns::CHAR.'])([\x17-\x1F]*[ksvzouiaKSVZOUIA][\x17-\x1F]*)\s++(?=[\x17-\x1F]*[0-9'.TexyPatterns::CHAR.'])#mus'
 													=> "\$1\xc2\xa0",
 
 			'#(?<!"|\w)"(?!\ |")((?:[^"]++|")+)(?<!\ |")"(?!["'.TexyPatterns::CHAR.'])()#Uu' => $locale['doubleQuotes'][0].'$1'.$locale['doubleQuotes'][1], // double ""
